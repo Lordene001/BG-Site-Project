@@ -16,7 +16,7 @@ import BgPages.HomePage;
 public class HomePageTest {
 
 	@Test
-	public void VeriifyHomePageLogo() {
+	public void Veriify_Home_Page_Logo() {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		boolean Logo = HP.ValidateLogo();
@@ -25,7 +25,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyHomePageVideo() {
+	public void Verify_Home_Page_Video() {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		boolean Video = HP.VerifyHomePagevideo();
@@ -34,7 +34,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyNewsLetter() {
+	public void Verify_News_Letter() {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		HP.NewsLetter();
@@ -45,7 +45,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyJoinTheMovement() throws InterruptedException {
+	public void Verify_Join_The_Movement() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		String ActualHeader = HP.JoinTheMovement();
@@ -56,7 +56,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyInvestInTheMovement() {
+	public void Verify_Invest_In_The_Movement() {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		HP.ClickInvestInTheMOvementButton();
@@ -78,7 +78,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyTheoryOfChangeDownloadButton() {
+	public void Verify_Theory_Of_Change_Download_Button() {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		HP.ClickTheoryOfChange();
@@ -97,7 +97,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyMeetTheTeamHomePageButton() throws InterruptedException {
+	public void Verify_Meet_The_Team_Home_Page_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		String Text = HP.MeetTheTeamHomePage();
@@ -108,7 +108,7 @@ public class HomePageTest {
 	}
 
 	@Test
-	public void VerifyAccelerateYourCareerButton() throws InterruptedException {
+	public void Verify_Accelerate_Your_Career_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		HomePage HP = new HomePage(driver);
 		String ActualHeader = HP.AccelerateCareerHome();

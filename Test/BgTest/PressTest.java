@@ -14,7 +14,7 @@ import BgPages.Press;
 public class PressTest {
 
 	@Test
-	public void VerifyNewsAndReportsButton() throws InterruptedException {
+	public void Verify_News_And_Reports_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		
 		Actions actions = new Actions(driver);
@@ -32,7 +32,7 @@ public class PressTest {
 	
 	
 	@Test
-	public void VerifyBlogButton() throws InterruptedException {
+	public void Verify_Blog_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		
 		Actions actions = new Actions(driver);
@@ -50,7 +50,7 @@ public class PressTest {
 	
 	
 	@Test
-	public void VerifyNewsAndReportsLoadMoreButton() throws InterruptedException {
+	public void Verify_News_And_Reports_Load_More_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		Press PR = new Press(driver);
 		
@@ -69,7 +69,7 @@ public class PressTest {
 	
 	
 	@Test
-	public void VerifyBlogViewAllAndReadMoreButton() throws InterruptedException {
+	public void Verify_Blog_View_All_And_Read_More_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		Press PR = new Press(driver);
 		
@@ -82,7 +82,7 @@ public class PressTest {
 		
 		PR.BlogViewAll();
 		String ActualURL = driver.getCurrentUrl();
-		String ExpectedURL = "https://babbangona.com/5-quick-and-useful-tips-for-successful-farming/";
+		String ExpectedURL = "https://babbangona.com/tackling-food-insecurity-through-technological-innovation/";
 		Assert.assertEquals(ActualURL, ExpectedURL);
 		BaseClass.TearDown(driver);
 		

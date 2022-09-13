@@ -13,7 +13,7 @@ import BgPages.StaffSignIn;
 public class StaffSignInTest {
 
 	@Test
-	public void VerifyStaffSignInButton() {
+	public void Verify_Staff_SignIn_Button() {
 		WebDriver driver = BaseClass.SetUp();
 		StaffSignIn SS = new StaffSignIn(driver);
 		SS.StaffSignInButton();

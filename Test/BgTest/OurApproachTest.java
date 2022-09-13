@@ -15,7 +15,7 @@ import BgPages.AboutUs;
 public class OurApproachTest {
 
 	@Test
-	public void VerifyOurModelButton() throws InterruptedException {
+	public void Verify_Our_Model_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		
 		Actions actions = new Actions(driver);
@@ -33,7 +33,7 @@ public class OurApproachTest {
 	
 	
 	@Test
-	public void VerifyMemberStoriesButton() throws InterruptedException {
+	public void Verify_Member_Stories_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		
 		Actions actions = new Actions(driver);

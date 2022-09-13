@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="23" passed="20" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-01T13:46:15 WAT" name="Default suite" finished-at="2022-09-01T13:49:07 WAT" duration-ms="172066">
+  <suite started-at="2022-09-13T11:42:52 WAT" name="Suite" finished-at="2022-09-13T11:45:43 WAT" duration-ms="170178">
     <groups>
     </groups>
-    <test started-at="2022-09-01T13:46:15 WAT" name="Default test" finished-at="2022-09-01T13:49:07 WAT" duration-ms="172066">
+    <test started-at="2022-09-13T11:42:52 WAT" name="Test" finished-at="2022-09-13T11:45:43 WAT" duration-ms="170178">
       <class name="BgTest.CareerPageTest">
-        <test-method signature="VerifyUserCanCreateAccount()[pri:0, instance:BgTest.CareerPageTest@1c7696c6]" started-at="2022-09-01T13:46:15 WAT" name="VerifyUserCanCreateAccount" finished-at="2022-09-01T13:49:07 WAT" duration-ms="172014" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="Verify_Career_Page_SignIn()[pri:0, instance:BgTest.CareerPageTest@173ed316]" started-at="2022-09-13T11:44:02 WAT" name="Verify_Career_Page_SignIn" finished-at="2022-09-13T11:44:47 WAT" duration-ms="45321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Career_Page_SignIn -->
+        <test-method signature="Verify_Check_Openings_Button()[pri:0, instance:BgTest.CareerPageTest@173ed316]" started-at="2022-09-13T11:44:09 WAT" name="Verify_Check_Openings_Button" finished-at="2022-09-13T11:44:42 WAT" duration-ms="33540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Check_Openings_Button -->
+        <test-method signature="Verify_Create_An_Account_In_Career_Page_SignIn()[pri:0, instance:BgTest.CareerPageTest@173ed316]" started-at="2022-09-13T11:44:20 WAT" name="Verify_Create_An_Account_In_Career_Page_SignIn" finished-at="2022-09-13T11:44:56 WAT" duration-ms="36019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Create_An_Account_In_Career_Page_SignIn -->
+        <test-method signature="Verify_Forgot_Password()[pri:0, instance:BgTest.CareerPageTest@173ed316]" started-at="2022-09-13T11:44:23 WAT" name="Verify_Forgot_Password" finished-at="2022-09-13T11:44:43 WAT" duration-ms="20188" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element not interactable
-  (Session info: MicrosoftEdge=104.0.1293.70)
+              <![CDATA[element click intercepted: Element <a href="https://babbangona.zohorecruit.com/jobs/Careers" class="elementor-button-link elementor-button elementor-size-md" role="button">...</a> is not clickable at point (759, 679). Other element would receive the click: <div class="preloader-plus complete">...</div>
+  (Session info: chrome=105.0.5195.102)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'ENE', ip: '172.168.1.83', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [8a1bef3970deccc948eaadac046a4c01, sendKeysToElement {id=855887e3-da68-4698-9ac6-9038f292f02f, value=[Ljava.lang.CharSequence;@7123be6c}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:54581}, msedge: {msedgedriverVersion: 104.0.1293.63 (7dd22b4a7f12..., userDataDir: C:\Users\bglag\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54581/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (8a1bef3970deccc948eaadac046a4c01)] -> xpath: //rec-file-upload-component[@id='rec-form_595887000000072325']]
-Session ID: 8a1bef3970deccc948eaadac046a4c01]]>
+System info: host: 'ENE', ip: '192.168.0.161', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d0b7e284fa2cacd6879ac035c1a10ba, clickElement {id=ea7632b9-7243-4584-af7a-97479ac3f917}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\bglag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50109/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4d0b7e284fa2cacd6879ac035c1a10ba)] -> xpath: (//a[@role='button'])[4]]
+Session ID: 4d0b7e284fa2cacd6879ac035c1a10ba]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=104.0.1293.70)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://babbangona.zohorecruit.com/jobs/Careers" class="elementor-button-link elementor-button elementor-size-md" role="button">...</a> is not clickable at point (759, 679). Other element would receive the click: <div class="preloader-plus complete">...</div>
+  (Session info: chrome=105.0.5195.102)
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'ENE', ip: '172.168.1.83', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [8a1bef3970deccc948eaadac046a4c01, sendKeysToElement {id=855887e3-da68-4698-9ac6-9038f292f02f, value=[Ljava.lang.CharSequence;@7123be6c}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:54581}, msedge: {msedgedriverVersion: 104.0.1293.63 (7dd22b4a7f12..., userDataDir: C:\Users\bglag\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54581/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (8a1bef3970deccc948eaadac046a4c01)] -> xpath: //rec-file-upload-component[@id='rec-form_595887000000072325']]
-Session ID: 8a1bef3970deccc948eaadac046a4c01
+System info: host: 'ENE', ip: '192.168.0.161', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d0b7e284fa2cacd6879ac035c1a10ba, clickElement {id=ea7632b9-7243-4584-af7a-97479ac3f917}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\bglag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50109/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4d0b7e284fa2cacd6879ac035c1a10ba)] -> xpath: (//a[@role='button'])[4]]
+Session ID: 4d0b7e284fa2cacd6879ac035c1a10ba
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -42,8 +54,14 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at BgTest.CareerPageTest.VerifyUserCanCreateAccount(CareerPageTest.java:125)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at BgPages.Careers.SignIn1(Careers.java:160)
+at BgTest.CareerPageTest.Verify_Forgot_Password(CareerPageTest.java:79)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,29 +74,210 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Forgot_Password -->
+        <test-method signature="Verify_Home_Page_Career_Button()[pri:0, instance:BgTest.CareerPageTest@173ed316]" started-at="2022-09-13T11:44:28 WAT" name="Verify_Home_Page_Career_Button" finished-at="2022-09-13T11:44:43 WAT" duration-ms="15910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Home_Page_Career_Button -->
+        <test-method signature="Verify_User_Can_Create_Account()[pri:0, instance:BgTest.CareerPageTest@173ed316]" started-at="2022-09-13T11:44:42 WAT" name="Verify_User_Can_Create_Account" finished-at="2022-09-13T11:45:43 WAT" duration-ms="60360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_User_Can_Create_Account -->
+      </class> <!-- BgTest.CareerPageTest -->
+      <class name="BgTest.StaffSignInTest">
+        <test-method signature="Verify_Staff_SignIn_Button()[pri:0, instance:BgTest.StaffSignInTest@69e153c5]" started-at="2022-09-13T11:44:00 WAT" name="Verify_Staff_SignIn_Button" finished-at="2022-09-13T11:44:28 WAT" duration-ms="27124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Staff_SignIn_Button -->
+      </class> <!-- BgTest.StaffSignInTest -->
+      <class name="BgTest.OurApproachTest">
+        <test-method signature="Verify_Member_Stories_Button()[pri:0, instance:BgTest.OurApproachTest@25ce9dc4]" started-at="2022-09-13T11:44:43 WAT" name="Verify_Member_Stories_Button" finished-at="2022-09-13T11:45:19 WAT" duration-ms="36059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Member_Stories_Button -->
+        <test-method signature="Verify_Our_Model_Button()[pri:0, instance:BgTest.OurApproachTest@25ce9dc4]" started-at="2022-09-13T11:44:43 WAT" name="Verify_Our_Model_Button" finished-at="2022-09-13T11:45:04 WAT" duration-ms="20089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Our_Model_Button -->
+      </class> <!-- BgTest.OurApproachTest -->
+      <class name="BgTest.HomePageTest">
+        <test-method signature="Verify_Accelerate_Your_Career_Button()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:42:52 WAT" name="Verify_Accelerate_Your_Career_Button" finished-at="2022-09-13T11:43:26 WAT" duration-ms="33749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Accelerate_Your_Career_Button -->
+        <test-method signature="Verify_Home_Page_Video()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:15 WAT" name="Verify_Home_Page_Video" finished-at="2022-09-13T11:43:30 WAT" duration-ms="15377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Home_Page_Video -->
+        <test-method signature="Verify_Invest_In_The_Movement()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:26 WAT" name="Verify_Invest_In_The_Movement" finished-at="2022-09-13T11:43:59 WAT" duration-ms="33347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Invest_In_The_Movement -->
+        <test-method signature="Verify_Join_The_Movement()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:26 WAT" name="Verify_Join_The_Movement" finished-at="2022-09-13T11:43:57 WAT" duration-ms="31017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Join_The_Movement -->
+        <test-method signature="Verify_Meet_The_Team_Home_Page_Button()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:27 WAT" name="Verify_Meet_The_Team_Home_Page_Button" finished-at="2022-09-13T11:44:00 WAT" duration-ms="33001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Meet_The_Team_Home_Page_Button -->
+        <test-method signature="Verify_News_Letter()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:30 WAT" name="Verify_News_Letter" finished-at="2022-09-13T11:44:02 WAT" duration-ms="31723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_News_Letter -->
+        <test-method signature="Verify_Theory_Of_Change_Download_Button()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:33 WAT" name="Verify_Theory_Of_Change_Download_Button" finished-at="2022-09-13T11:43:59 WAT" duration-ms="25329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Theory_Of_Change_Download_Button -->
+        <test-method signature="Veriify_Home_Page_Logo()[pri:0, instance:BgTest.HomePageTest@2cf3d63b]" started-at="2022-09-13T11:43:57 WAT" name="Veriify_Home_Page_Logo" finished-at="2022-09-13T11:44:09 WAT" duration-ms="11448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Veriify_Home_Page_Logo -->
+      </class> <!-- BgTest.HomePageTest -->
+      <class name="BgTest.AboutUsTest">
+        <test-method signature="Verify_Leadership_Button()[pri:0, instance:BgTest.AboutUsTest@7674f035]" started-at="2022-09-13T11:43:59 WAT" name="Verify_Leadership_Button" finished-at="2022-09-13T11:44:20 WAT" duration-ms="21248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Leadership_Button -->
+        <test-method signature="Verify_Who_We_Are_Button()[pri:0, instance:BgTest.AboutUsTest@7674f035]" started-at="2022-09-13T11:43:59 WAT" name="Verify_Who_We_Are_Button" finished-at="2022-09-13T11:44:23 WAT" duration-ms="23532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Who_We_Are_Button -->
+      </class> <!-- BgTest.AboutUsTest -->
+      <class name="BgTest.PressTest">
+        <test-method signature="Verify_News_And_Reports_Button()[pri:0, instance:BgTest.PressTest@7526515b]" started-at="2022-09-13T11:42:52 WAT" name="Verify_News_And_Reports_Button" finished-at="2022-09-13T11:43:27 WAT" duration-ms="34905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_News_And_Reports_Button -->
+        <test-method signature="Verify_Blog_Button()[pri:0, instance:BgTest.PressTest@7526515b]" started-at="2022-09-13T11:42:52 WAT" name="Verify_Blog_Button" finished-at="2022-09-13T11:43:26 WAT" duration-ms="33370" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'ENE', ip: '192.168.0.161', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [956c4669aa950b60004ee6d9260443a4, clickElement {id=2294da77-6059-45b4-ae36-46bcdab81c36}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\bglag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51680}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51680/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (956c4669aa950b60004ee6d9260443a4)] -> xpath: (//ul/li/a[text()='Blog'])[1]]
+Session ID: 956c4669aa950b60004ee6d9260443a4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'ENE', ip: '192.168.0.161', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [956c4669aa950b60004ee6d9260443a4, clickElement {id=2294da77-6059-45b4-ae36-46bcdab81c36}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\bglag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51680}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51680/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (956c4669aa950b60004ee6d9260443a4)] -> xpath: (//ul/li/a[text()='Blog'])[1]]
+Session ID: 956c4669aa950b60004ee6d9260443a4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at BgTest.PressTest.Verify_Blog_Button(PressTest.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyUserCanCreateAccount -->
-      </class> <!-- BgTest.CareerPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- Verify_Blog_Button -->
+        <test-method signature="Verify_News_And_Reports_Load_More_Button()[pri:0, instance:BgTest.PressTest@7526515b]" started-at="2022-09-13T11:42:52 WAT" name="Verify_News_And_Reports_Load_More_Button" finished-at="2022-09-13T11:43:15 WAT" duration-ms="22128" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'ENE', ip: '192.168.0.161', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fd202d049c8a65c9c84c583e2f7eeb1, clickElement {id=67f091a3-2939-4f31-b00e-98b322cc32c3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\bglag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51677/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1fd202d049c8a65c9c84c583e2f7eeb1)] -> xpath: (//ul/li/a[text()='News and Reports'])[1]]
+Session ID: 1fd202d049c8a65c9c84c583e2f7eeb1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'ENE', ip: '192.168.0.161', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fd202d049c8a65c9c84c583e2f7eeb1, clickElement {id=67f091a3-2939-4f31-b00e-98b322cc32c3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\bglag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51677}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51677/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1fd202d049c8a65c9c84c583e2f7eeb1)] -> xpath: (//ul/li/a[text()='News and Reports'])[1]]
+Session ID: 1fd202d049c8a65c9c84c583e2f7eeb1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at BgTest.PressTest.Verify_News_And_Reports_Load_More_Button(PressTest.java:62)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_News_And_Reports_Load_More_Button -->
+        <test-method signature="Verify_Blog_View_All_And_Read_More_Button()[pri:0, instance:BgTest.PressTest@7526515b]" started-at="2022-09-13T11:42:52 WAT" name="Verify_Blog_View_All_And_Read_More_Button" finished-at="2022-09-13T11:43:33 WAT" duration-ms="40726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_Blog_View_All_And_Read_More_Button -->
+      </class> <!-- BgTest.PressTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

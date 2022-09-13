@@ -17,7 +17,7 @@ import BgPages.AboutUs;
 public class AboutUsTest {
 
 	@Test
-	public void VerifyLeadershipButton() throws InterruptedException {
+	public void Verify_Leadership_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		AboutUs About = new AboutUs(driver);
 		
@@ -37,7 +37,7 @@ public class AboutUsTest {
 
 		
 	@Test
-	public void VerifyWhoWeAreButton() throws InterruptedException {
+	public void Verify_Who_We_Are_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp();
 		AboutUs About = new AboutUs(driver);
 
