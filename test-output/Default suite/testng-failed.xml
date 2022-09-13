@@ -5,7 +5,7 @@
     <classes>
       <class name="BgTest.CareerPageTest">
         <methods>
-          <include name="Verify_Home_Page_Career_Button"/>
+          <include name="Verify_User_Can_Create_Account"/>
         </methods>
       </class> <!-- BgTest.CareerPageTest -->
     </classes>

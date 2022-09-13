@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BgTest.PressTest">
-        <methods>
-          <include name="Verify_Blog_Button"/>
-          <include name="Verify_News_And_Reports_Load_More_Button"/>
-        </methods>
-      </class> <!-- BgTest.PressTest -->
       <class name="BgTest.CareerPageTest">
         <methods>
-          <include name="Verify_Forgot_Password"/>
+          <include name="Verify_User_Can_Create_Account"/>
         </methods>
       </class> <!-- BgTest.CareerPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
