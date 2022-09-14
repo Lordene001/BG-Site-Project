@@ -23,7 +23,7 @@ import BgPages.Careers;
 
 public class CareerPageTest {
 
-	/*
+	
 	@Test public void Verify_Home_Page_Career_Button() throws InterruptedException {
 		WebDriver driver = BaseClass.SetUp(); 
 		Careers CS = new Careers(driver);
@@ -90,7 +90,7 @@ public class CareerPageTest {
 		//BaseClass.TearDown(driver);
 	 }
 	 
-*/
+
 	@Test
 	public void Verify_User_Can_Create_Account() throws InterruptedException, AWTException {
 
