@@ -18,36 +18,35 @@ public class BaseClass {
 	static WebDriver driver;
 
 	
-	public static WebDriver SetUp() {
-		System.setProperty("webdriver.chrome.driver",   
-				"C:\\Users\\bglag\\Desktop\\selenium hood\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().window().maximize();
-		driver.get("https://babbangona.com/");
+	public static  WebDriver Browser(String BrowserType) {
+		if(BrowserType.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver",   
+					"C:\\Users\\bglag\\Desktop\\selenium hood\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			driver.manage().window().maximize();
+			driver.get("https://babbangona.com/");
+			return driver;
+		}
+		else if(BrowserType.equalsIgnoreCase("Edge")) {
+			System.setProperty("webdriver.edge.driver", 
+					"C:\\Users\\bglag\\Desktop\\selenium hood\\msedgedriver.exe");
+			WebDriver driver = new EdgeDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			driver.manage().window().maximize();
+			driver.get("https://babbangona.com/");
+			return driver;
+		}
 		return driver;
+		
 	}
 	
-	/*
-	public static WebDriver SetUp() {
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\bglag\\Desktop\\selenium hood\\msedgedriver.exe");
-		WebDriver driver = new EdgeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().window().maximize();
-		driver.get("https://babbangona.com/");
-		return driver;
-	}
 	
 	
 	public static WebDriver SetUp() {
-		System.setProperty("Webdriver.gecko.driver", 
-				"C:\\Users\\bglag\\Desktop\\selenium hood\\geckodriver.exe");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().window().maximize();
-		driver.get("https://babbangona.com/");
-		return driver;
+		return Browser("edge");
 	}
-*/
+	
 	
 	public static void TearDown(WebDriver driver) {
 		driver.quit();
