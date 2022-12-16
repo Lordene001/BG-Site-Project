@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BgTest.CareerPageTest">
+      <class name="BgTest.PressTest">
         <methods>
-          <include name="Verify_User_Can_Create_Account"/>
+          <include name="Check_For_News_And_Report_Page_Broken_Links"/>
+          <include name="Check_For_Blog_Page_Broken_Links"/>
         </methods>
-      </class> <!-- BgTest.CareerPageTest -->
+      </class> <!-- BgTest.PressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

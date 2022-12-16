@@ -12,6 +12,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseClass {
 
@@ -20,8 +22,7 @@ public class BaseClass {
 	
 	public static  WebDriver Browser(String BrowserType) {
 		if(BrowserType.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver",   
-					"C:\\Users\\bglag\\Desktop\\selenium hood\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			driver.manage().window().maximize();
@@ -29,14 +30,22 @@ public class BaseClass {
 			return driver;
 		}
 		else if(BrowserType.equalsIgnoreCase("Edge")) {
-			System.setProperty("webdriver.edge.driver", 
-					"C:\\Users\\bglag\\Desktop\\selenium hood\\msedgedriver.exe");
+			WebDriverManager.edgedriver().setup();
 			WebDriver driver = new EdgeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			driver.manage().window().maximize();
 			driver.get("https://babbangona.com/");
 			return driver;
 		}
+		else if(BrowserType.equalsIgnoreCase("Firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			WebDriver driver = new FirefoxDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			driver.manage().window().maximize();
+			driver.get("https://babbangona.com/");
+			return driver;
+		}
+		
 		return driver;
 		
 	}
